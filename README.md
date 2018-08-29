@@ -2,12 +2,26 @@
 
 ## Install
 
-- Copy `ref_docs.py` to `(Sublime Text Data dir)/Packages/User`
-- Install package "Select Quoted"
-- Assign key: `{ "keys": ["f1"], "command": "ref_docs" }`
+Go to the Sublime Text Packages directory and git clone:
 
-If the browser doesn't open or you want a different browser, use the "browser" argument:
+`git clone https://github.com/RJK-Engineering/SublimeRefDocs.git RefDocs`
+
+## Key Binding
+
+Basic config: `{ "keys": ["f1"], "command": "ref_docs" }`
+
+For Windows, `Default (Windows).sublime-keymap` is provided, create your own for other OS's.
+
+## Options
+
+If the browser doesn't open or if you want a different browser, use the "browser" argument:
 `{ "keys": ["f1"], "command": "ref_docs", "args": { "browser": "c:/dev/chrome/GoogleChromePortable.exe" } }`
+
+## To Do
+
+* browser.open_new_tab option
+* configurable package name -> url mapping
+    * configurable package name string conversion ("/" => ".")
 
 ## See Also
 
