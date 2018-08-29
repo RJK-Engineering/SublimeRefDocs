@@ -1,6 +1,6 @@
 # Sublime "Ref Docs" plugin
 
-Open reference docs for the selected package name. If the cursor is within quoted text the quoted text will be selected.
+Open reference docs for the selected package name. If there is no selection and the cursor is within quoted text the quoted text will be selected.
 
 ## Install
 
