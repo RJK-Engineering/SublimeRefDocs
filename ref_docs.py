@@ -2,7 +2,7 @@ import sublime, sublime_plugin, webbrowser
 
 class RefDocsCommand(sublime_plugin.TextCommand):
 
-    def run(self, edit):
+    def run(self, edit, browser=""):
         if self.view.sel()[0].empty():
             self.view.run_command("select_quoted")
 
@@ -17,7 +17,10 @@ class RefDocsCommand(sublime_plugin.TextCommand):
             sublime.message_dialog("Invalid name:\n\n" + region)
 
         if (url):
-            webbrowser.open("https://www.ibm.com/support/knowledgecenter/" + url)
+            if (browser):
+                webbrowser.get(browser + " %s").open("https://www.ibm.com/support/knowledgecenter/" + url)
+            else:
+                webbrowser.open("https://www.ibm.com/support/knowledgecenter/" + url)
 
     def description(self):
         return "Open reference docs"
