@@ -2,6 +2,8 @@
 
 Open reference documentation in a browser for the selected name, e.g. a package or a class name. If there is no selection and the cursor is within quoted text the quoted text will be selected.
 
+Home page: https://github.com/RJK-Engineering/SublimeRefDocs
+
 ## Install
 
 Go to the Sublime Text Packages directory and git clone:
@@ -16,7 +18,7 @@ Basic config:
 
 `{ "keys": ["f1"], "command": "ref_docs" }`
 
-For Windows, `Default (Windows).sublime-keymap` is provided, create your own for other OS's.
+For Windows, ["`Default (Windows).sublime-keymap`"]() is provided, create your own for other OS's.
 
 ## Options
 
@@ -26,7 +28,7 @@ If the browser doesn't open or if you want a different browser, use the "browser
 
 ## Settings
 
-Name to url mapping is configured in `RefDocs.sublime-settings`.
+Name to url mapping is configured in [`RefDocs.sublime-settings`]().
 
 ## See Also
 
