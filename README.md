@@ -18,7 +18,7 @@ Basic config:
 
 `{ "keys": ["f1"], "command": "ref_docs" }`
 
-For Windows, ["`Default (Windows).sublime-keymap`"]("Default (Windows).sublime-keymap") is provided, create your own for other OS's.
+For Windows, ["Default (Windows).sublime-keymap"]("Default (Windows).sublime-keymap") is provided, create your own for other OS's.
 
 ## Options
 
