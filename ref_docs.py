@@ -1,4 +1,4 @@
-import sublime, sublime_plugin, webbrowser
+import sublime, sublime_plugin, webbrowser, re
 
 class RefDocsCommand(sublime_plugin.TextCommand):
 
@@ -7,20 +7,31 @@ class RefDocsCommand(sublime_plugin.TextCommand):
             self.view.run_command("select_quoted")
 
         region = self.view.substr(self.view.sel()[0])
-        region = region.replace("/", ".")
 
-        if (region.startswith('icm.')):
-            url = "SSCTJ4_5.3.2/com.ibm.casemgmt.development.doc/jsdoc/symbols/" + region + ".html"
-        elif (region.startswith('ecm.')):
-            url = "SSEUEX_3.0.1/com.ibm.developingeuc.doc/doc/JavaScriptdoc/symbols/" + region + ".html"
-        else:
-            sublime.message_dialog("Invalid name:\n\n" + region)
+        settings = sublime.load_settings('RefDocs.sublime-settings')
 
-        if (url):
-            if (browser):
-                webbrowser.get(browser + " %s").open("https://www.ibm.com/support/knowledgecenter/" + url)
+        url = ""
+        for site in settings.get('sites'):
+            replace = site['replace']
+            if replace:
+                p = re.compile(replace[0])
+                name = p.sub(replace[1], region)
             else:
-                webbrowser.open("https://www.ibm.com/support/knowledgecenter/" + url)
+                name = region
+
+            p = re.compile(site['pattern'])
+            if p.match(name):
+                url = site['url'].format(name=name)
+                break
+
+        if not url:
+            sublime.message_dialog("Invalid name:\n\n" + region if region else "Nothing selected")
+            return
+
+        if browser:
+            webbrowser.get(browser + " %s").open_new_tab(url)
+        else:
+            webbrowser.open_new_tab(url)
 
     def description(self):
         return "Open reference docs"

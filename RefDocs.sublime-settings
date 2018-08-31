@@ -1,0 +1,18 @@
+{
+    "sites": [ {
+        "name": "icm",
+        "pattern": "^icm\\.",
+        "replace": ["/", "."],
+        "url": "https://www.ibm.com/support/knowledgecenter/SSCTJ4_5.3.2/com.ibm.casemgmt.development.doc/jsdoc/symbols/{name}.html"
+    }, {
+        "name": "ecm",
+        "pattern": "^ecm\\.",
+        "replace": ["/", "."],
+        "url": "https://www.ibm.com/support/knowledgecenter/SSEUEX_3.0.1/com.ibm.developingeuc.doc/doc/JavaScriptdoc/symbols/{name}.html"
+    }, {
+        "name": "dojo",
+        "pattern": "^dojo",
+        "replace": ["\\.", "/"],
+        "url": "https://dojotoolkit.org/reference-guide/1.7/{name}.html"
+    } ]
+}

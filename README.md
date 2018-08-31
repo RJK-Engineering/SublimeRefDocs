@@ -24,11 +24,9 @@ If the browser doesn't open or if you want a different browser, use the "browser
 
 `{ "keys": ["f1"], "command": "ref_docs", "args": { "browser": "c:/dev/chrome/GoogleChromePortable.exe" } }`
 
-## To Do
+## Settings
 
-* browser.open_new_tab option
-* configurable package name -> url mapping
-    * configurable package name string conversion ("/" => ".")
+Url mappings are configured in `RefDocs.sublime-settings`.
 
 ## See Also
 
