@@ -26,7 +26,7 @@ If the browser doesn't open or if you want a different browser, use the "browser
 
 ## Settings
 
-Url mappings are configured in `RefDocs.sublime-settings`.
+Name to url mapping is configured in `RefDocs.sublime-settings`.
 
 ## See Also
 
