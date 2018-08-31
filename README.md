@@ -4,11 +4,11 @@ Open reference docs in a browser for the selected package name. If there is no s
 
 ## Install
 
-Use Package Control to install package "Select Quoted".
-
 Go to the Sublime Text Packages directory and git clone:
 
 `git clone https://github.com/RJK-Engineering/SublimeRefDocs.git RefDocs`
+
+To enable automatic selection, install package "Select Quoted" (https://github.com/int3h/SublimeSelectQuoted).
 
 ## Key Binding
 
