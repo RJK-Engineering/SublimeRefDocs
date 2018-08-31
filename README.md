@@ -18,7 +18,7 @@ Basic config:
 
 `{ "keys": ["f1"], "command": "ref_docs" }`
 
-For Windows, ["`Default (Windows).sublime-keymap`"]() is provided, create your own for other OS's.
+For Windows, ["`Default (Windows).sublime-keymap`"]("Default (Windows).sublime-keymap") is provided, create your own for other OS's.
 
 ## Options
 
@@ -28,7 +28,7 @@ If the browser doesn't open or if you want a different browser, use the "browser
 
 ## Settings
 
-Name to url mapping is configured in [`RefDocs.sublime-settings`]().
+Name to url mapping is configured in [`RefDocs.sublime-settings`](RefDocs.sublime-settings).
 
 ## See Also
 
