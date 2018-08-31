@@ -1,4 +1,4 @@
-# Sublime "Ref Docs" plugin
+# Sublime "Ref Docs" Plugin
 
 Open reference documentation in a browser for the selected name, e.g. a package or a class name. If there is no selection and the cursor is within quoted text the quoted text will be selected.
 
