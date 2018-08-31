@@ -1,5 +1,5 @@
 {
-    "sites": [ {
+    "mapping": [ {
         "name": "icm",
         "pattern": "^icm\\.",
         "replace": ["/", "."],

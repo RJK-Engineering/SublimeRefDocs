@@ -11,17 +11,17 @@ class RefDocsCommand(sublime_plugin.TextCommand):
         settings = sublime.load_settings('RefDocs.sublime-settings')
 
         url = ""
-        for site in settings.get('sites'):
-            replace = site['replace']
+        for mapping in settings.get('mapping'):
+            replace = mapping['replace']
             if replace:
                 p = re.compile(replace[0])
                 name = p.sub(replace[1], region)
             else:
                 name = region
 
-            p = re.compile(site['pattern'])
+            p = re.compile(mapping['pattern'])
             if p.match(name):
-                url = site['url'].format(name=name)
+                url = mapping['url'].format(name=name)
                 break
 
         if not url:
