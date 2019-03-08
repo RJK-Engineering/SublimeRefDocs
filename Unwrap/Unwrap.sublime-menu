@@ -1,0 +1,18 @@
+[
+  {
+    "id":"edit",
+    "caption":"Edit",
+    "children":[
+      {
+        "caption":"Unwrap",
+        "children":[
+          { "caption":"At 70 characters", "command":"unwrap", "args":{ "at":70 } },
+          { "caption":"At 80 characters", "command":"unwrap", "args":{ "at":80 } },
+          { "caption":"At 100 characters", "command":"unwrap", "args":{ "at":100 } },
+          { "caption":"At 120 characters", "command":"unwrap", "args":{ "at":120 } }
+        ],
+        "id":"unwrap"
+      }
+    ]
+  }
+]
