@@ -1,0 +1,5 @@
+<snippet>
+	<content><![CDATA[${1:@}{${2:\$}}]]></content>
+	<tabTrigger>deref</tabTrigger>
+	<scope>source.perl</scope>
+</snippet>

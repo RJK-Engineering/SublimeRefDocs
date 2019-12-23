@@ -1,0 +1,10 @@
+<snippet>
+	<content><![CDATA[sub new {
+	my \$self = bless {}, shift;
+	\$self->{$1} = shift;
+	return \$self;
+}
+]]></content>
+	<tabTrigger>new</tabTrigger>
+	<scope>source.perl</scope>
+</snippet>

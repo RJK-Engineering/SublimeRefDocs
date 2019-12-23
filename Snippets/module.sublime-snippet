@@ -1,0 +1,13 @@
+<snippet>
+	<content><![CDATA[package $1;
+
+use strict;
+use warnings;
+
+$2
+
+1;
+]]></content>
+	<tabTrigger>module</tabTrigger>
+	<scope>source.perl</scope>
+</snippet>
