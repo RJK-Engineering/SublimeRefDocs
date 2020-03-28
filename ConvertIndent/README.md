@@ -6,4 +6,4 @@ Convert number of spaces in indentation.
 Usage
 =====
 
-Open command pallete and type "ConvertIndent".
+Open command palette and type "convertindent".
