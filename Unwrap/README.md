@@ -6,4 +6,4 @@ Unwrap text.
 Usage
 =====
 
-Open command pallete and type "unwrap".
+Open command palette and type "unwrap".
