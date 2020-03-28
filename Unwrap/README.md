@@ -1,1 +1,9 @@
-http://docs.sublimetext.info/en/latest/customization/menus.html
+Unwrap
+======
+
+Unwrap text.
+
+Usage
+=====
+
+Open command pallete and type "unwrap".
