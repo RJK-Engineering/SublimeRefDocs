@@ -1,0 +1,12 @@
+[
+{ "keys": ["f5"], "command": "build", "args": {"variant" : "run"} },
+{ "keys": ["ctrl+1"], "command": "build", "args": {"variant" : "check_syntax"} },
+{ "keys": ["alt+x"], "command": "goto_definition" },
+// { "keys": ["alt+d"], "command": "goto_definition" },
+{ "keys": ["ctrl+q"], "command": "toggle_comment" },
+{ "keys": ["ctrl+f1"], "command": "toggle_side_bar" },
+{ "keys": ["f1"], "command": "goto_definition" },
+{ "keys": ["ctrl+shift+x"], "command": "expand_tabs" },
+{ "keys": ["ctrl+alt+shift+x"], "command": "run_macro",
+    "args": {"file" : "Packages\\User\\reindent, all spaces.sublime-macro"} }
+]
