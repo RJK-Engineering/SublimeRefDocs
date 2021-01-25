@@ -1,0 +1,17 @@
+{
+    "cmd": ["perl",
+            "-I", "$project_path\\perllib",
+            "-w", "$file"],
+    "file_regex": "at (.+) line ([0-9]*)",
+    "selector": "source.perl",
+    "variants" : [
+        { "name" : "check_syntax",
+          "cmd": [ "perl",
+                   "-cw", "$file" ]
+        },
+        { "name" : "run",
+          "cmd": ["perl",
+                  "-w", "$file" ]
+        }
+    ]
+}
