@@ -7,6 +7,6 @@
 { "keys": ["ctrl+f1"], "command": "toggle_side_bar" },
 { "keys": ["f1"], "command": "goto_definition" },
 { "keys": ["ctrl+shift+x"], "command": "expand_tabs" },
-{ "keys": ["ctrl+alt+shift+x"], "command": "run_macro",
-    "args": {"file" : "Packages\\User\\reindent, all spaces.sublime-macro"} }
+{ "keys": ["ctrl+alt+shift+x"], "command": "run_macro_file",
+    "args": {"file" : "res://Packages/User/macros/Reindent, all spaces.sublime-macro"} }
 ]
