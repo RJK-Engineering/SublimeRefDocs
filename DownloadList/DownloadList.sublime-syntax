@@ -1,0 +1,27 @@
+%YAML 1.2
+---
+name: DownloadList
+file_extensions: [dl, downloadlist]
+scope: source.downloadlist
+
+contexts:
+  main:
+    - match: \b(copy|move)\b
+      scope: keyword.control.downloadlist
+      push: files
+    - match: \b(OK)..\b
+      captures:
+        1: meta.class.downloadlist
+      push: files
+    - match: ( -> )
+      scope: keyword.control.downloadlist
+    - match: (\w+://.*)
+      scope: keyword.declaration.url.downloadlist
+  files:
+    - match: (:)(\w:\\.*) -> (?:(\w:\\.*)|(NUL))
+      captures:
+        1: punctuation.definition.comment.downloadlist
+        2: entity.name.function.downloadlist
+        3: entity.name.function.downloadlist
+        4: meta.class.downloadlist
+      pop: true
