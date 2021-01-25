@@ -1,0 +1,56 @@
+{
+	"added_words":
+	[
+		"equivalencies",
+		"Foswiki",
+		"plugins",
+		"javascript",
+		"http",
+		"multiculturalisering"
+	],
+	"always_prompt_for_file_reload": true,
+	"auto_complete_selector": "source, text",
+	"auto_match_enabled": false,
+	"color_scheme": "Packages/User/RJK.tmTheme",
+	"detect_indentation": false,
+	"dictionary": "Packages/Language - English/en_US.dic",
+    "folder_exclude_patterns": [".svn", ".git", ".hg", "CVS", "*~", "~*"],
+	"file_exclude_patterns":
+	[
+		"*.pyc",
+		"*.pyo",
+		"*.exe",
+		"*.dll",
+		"*.obj",
+		"*.o",
+		"*.a",
+		"*.lib",
+		"*.so",
+		"*.dylib",
+		"*.ncb",
+		"*.sdf",
+		"*.suo",
+		"*.pdb",
+		"*.idb",
+		".DS_Store",
+		"*.class",
+		"*.psd",
+		"*.db",
+		"*.sublime-workspace",
+		"*.orig"
+	],
+	"font_size": 11,
+	"highlight_modified_tabs": true,
+	"ignored_packages":
+	[
+		"Anaconda",
+		"Vintage"
+	],
+	"show_encoding": true,
+	"show_errors_inline": false,
+	"tab_size": 4,
+	"theme": "Adaptive.sublime-theme",
+	"translate_tabs_to_spaces": true,
+	"trim_trailing_white_space_on_save": true,
+	"use_tab_stops": true
+}
