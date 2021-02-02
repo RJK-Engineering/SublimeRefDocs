@@ -1,0 +1,8 @@
+<snippet>
+	<content><![CDATA[
+@{\$${1:self}->{$2}}
+]]></content>
+	<tabTrigger>va</tabTrigger>
+	<scope>source.perl</scope>
+	<description>@{$hash->{key}}</description>
+</snippet>

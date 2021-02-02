@@ -1,5 +1,6 @@
 <snippet>
-	<content><![CDATA[sub new {
+	<content><![CDATA[
+sub new {
 	my \$self = bless {}, shift;
 	\$self->{$1} = shift;
 	return \$self;

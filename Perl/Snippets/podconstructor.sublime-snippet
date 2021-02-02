@@ -1,0 +1,17 @@
+<snippet>
+	<content><![CDATA[
+##############################################################################
+=pod
+
+---++ Constructor
+
+---+++ new($1) -> $2
+Returns a new =$3= object.
+
+=cut
+##############################################################################
+
+]]></content>
+	<tabTrigger>podconstructor</tabTrigger>
+	<scope>source.perl</scope>
+</snippet>

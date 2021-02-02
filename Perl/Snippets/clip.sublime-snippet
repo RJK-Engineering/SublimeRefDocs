@@ -1,0 +1,9 @@
+<snippet>
+	<content><![CDATA[
+use Win32::Clipboard;
+my \$${1:clip} = Win32::Clipboard();
+\$${1:clip}->Set($2);
+]]></content>
+	<tabTrigger>clip</tabTrigger>
+	<scope>source.perl</scope>
+</snippet>

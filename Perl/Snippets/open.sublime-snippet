@@ -1,0 +1,12 @@
+<snippet>
+	<content><![CDATA[
+open my \$fh, '<', \$${1:file} or die "\$!: \$${1:file}";
+while (<\$fh>) {
+	${2:chomp};
+	${3:print "\$_\n"};
+}
+close \$fh;
+]]></content>
+	<tabTrigger>open</tabTrigger>
+	<scope>source.perl</scope>
+</snippet>

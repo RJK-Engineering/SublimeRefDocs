@@ -1,0 +1,10 @@
+<snippet>
+	<content><![CDATA[
+open my \$fh, '>', \$${1:file} or die "\$!: \$${1:file}";
+print \$fh ${2:""};
+close \$fh;
+]]></content>
+	<tabTrigger>open</tabTrigger>
+	<scope>source.perl</scope>
+	<description>Open, write mode</description>
+</snippet>

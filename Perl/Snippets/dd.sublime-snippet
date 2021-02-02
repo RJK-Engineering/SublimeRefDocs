@@ -1,6 +1,8 @@
 <snippet>
-	<content><![CDATA[use Data::Dump;
-dd $1;]]></content>
+	<content><![CDATA[
+use Data::Dump;
+dd $1;
+]]></content>
 	<tabTrigger>dd</tabTrigger>
 	<scope>source.perl</scope>
 </snippet>

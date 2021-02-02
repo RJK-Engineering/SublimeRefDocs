@@ -1,0 +1,12 @@
+<snippet>
+	<content><![CDATA[
+sub $1 {
+	my (\$${2:self}, \$$3, \$$4) = @_;
+	$5
+}
+
+]]></content>
+	<tabTrigger>sssub</tabTrigger>
+	<scope>source.perl</scope>
+	<description>sub($arg, $arg, $arg)</description>
+</snippet>
